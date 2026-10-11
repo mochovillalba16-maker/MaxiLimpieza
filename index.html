@@ -16,8 +16,6 @@
     <meta property="og:description" content="Especialistas en limpieza profunda de muebles a domicilio. Servicio rápido y profesional en Barranquilla.">
     <meta property="og:type" content="website">
 
-    
-
     <!-- FUENTES DE GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,16 +23,18 @@
     
     <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/svg" href="favicon.svg">
+    
+    <!-- FAVICON (Usando tu logo actual) -->
+    <link rel="icon" type="image/jpeg" href="Logo.jpeg">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- ENCABEZADO / NAVEGACIÓN -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container nav-container">
             <div class="logo">
-                <!-- Aquí va tu logo. Asegúrate de guardar la imagen como 'logo.png' en la misma carpeta -->
                 <img src="Logo.jpeg" alt="Logo Maxi Limpieza - Lavado de Muebles en Barranquilla" class="logo-img">
             </div>
             <nav class="navbar">
@@ -49,10 +49,10 @@
     <!-- SECCIÓN HERO / PORTADA -->
     <section id="inicio" class="hero">
         <div class="container hero-content">
-            <h1>Lavado de Muebles a Domicilio en <span class="highlight">Barranquilla</span></h1>
-            <p>Recupera la frescura y limpieza de tus sofás, colchones y alfombras. Somos expertos en eliminar manchas, ácaros y malos olores.</p>
-            <div class="hero-buttons">
-                <a href="https://wa.me/573000000000?text=Hola%20Maxi%20Limpieza,%20quiero%20agendar%20un%20servicio" class="btn btn-primary" target="_blank">
+            <h1 class="reveal">Lavado de Muebles a Domicilio en <span class="highlight">Barranquilla</span></h1>
+            <p class="reveal">Recupera la frescura y limpieza de tus sofás, colchones y alfombras. Somos expertos en eliminar manchas, ácaros y malos olores.</p>
+            <div class="hero-buttons reveal">
+                <a href="https://wa.me/573234729337?text=Hola%20Maxi%20Limpieza,%20quiero%20agendar%20un%20servicio" class="btn btn-primary" target="_blank">
                     <i class="fab fa-whatsapp"></i> Agendar por WhatsApp
                 </a>
                 <a href="#servicios" class="btn btn-secondary">Ver Servicios</a>
@@ -63,30 +63,67 @@
     <!-- SECCIÓN DE SERVICIOS -->
     <section id="servicios" class="services">
         <div class="container">
-            <h2 class="section-title">Nuestros Servicios de Limpieza</h2>
-            <p class="section-subtitle">Llevamos nuestro equipo profesional hasta la puerta de tu casa u oficina en Barranquilla.</p>
+            <h2 class="section-title reveal">Nuestros Servicios de Limpieza</h2>
+            <p class="section-subtitle reveal">Llevamos nuestro equipo profesional hasta la puerta de tu casa u oficina en Barranquilla.</p>
             
             <div class="services-grid">
+                
+                <!-- SERVICIO 1: SOFÁS -->
                 <div class="service-card">
-                    <i class="fas fa-couch service-icon"></i>
-                    <h3>Lavado de Sofás y Sillas</h3>
-                    <p>Limpieza profunda con inyección y extracción para eliminar la suciedad incrustada y manchas difíciles.</p>
+                    <div class="slider">
+                        <img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=800&auto=format&fit=crop" alt="Lavado de sofás en Barranquilla" class="slide active">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800&auto=format&fit=crop" alt="Máquina de limpieza de sofás" class="slide">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" alt="Limpieza profunda de tela" class="slide">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-couch service-icon"></i>
+                        <h3>Lavado de Sofás y Sillas</h3>
+                        <p>Limpieza profunda con inyección y extracción para eliminar la suciedad incrustada y manchas difíciles.</p>
+                    </div>
                 </div>
+
+                <!-- SERVICIO 2: COLCHONES -->
                 <div class="service-card">
-                    <i class="fas fa-bed service-icon"></i>
-                    <h3>Limpieza de Colchones</h3>
-                    <p>Eliminación de ácaros, polvo y bacterias. Ideal para personas alérgicas y para mejorar tu descanso.</p>
+                    <div class="slider">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=800&auto=format&fit=crop" alt="Limpieza de colchones en Barranquilla" class="slide active">
+                        <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?q=80&w=800&auto=format&fit=crop" alt="Aspirado de colchón" class="slide">
+                        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=800&auto=format&fit=crop" alt="Habitación limpia" class="slide">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-bed service-icon"></i>
+                        <h3>Limpieza de Colchones</h3>
+                        <p>Eliminación de ácaros, polvo y bacterias. Ideal para personas alérgicas y para mejorar tu descanso.</p>
+                    </div>
                 </div>
+
+                <!-- SERVICIO 3: ALFOMBRAS -->
                 <div class="service-card">
-                    <i class="fas fa-rug service-icon"></i>
-                    <h3>Alfombras y Tapetes</h3>
-                    <p>Tratamiento especializado para todo tipo de fibras, devolviendo el color y la suavidad original.</p>
+                    <div class="slider">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Lavado de alfombras en Barranquilla" class="slide active">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop" alt="Máquina de lavado de alfombras" class="slide">
+                        <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=800&auto=format&fit=crop" alt="Alfombra limpia" class="slide">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-rug service-icon"></i>
+                        <h3>Alfombras y Tapetes</h3>
+                        <p>Tratamiento especializado para todo tipo de fibras, devolviendo el color y la suavidad original.</p>
+                    </div>
                 </div>
+
+                <!-- SERVICIO 4: AUTOMOTRIZ -->
                 <div class="service-card">
-                    <i class="fas fa-car service-icon"></i>
-                    <h3>Limpieza Automotriz</h3>
-                    <p>Lavado detallado de tapicería interna de vehículos. Elimina olores y manchas en tu auto.</p>
+                    <div class="slider">
+                        <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=800&auto=format&fit=crop" alt="Limpieza automotriz en Barranquilla" class="slide active">
+                        <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=800&auto=format&fit=crop" alt="Lavado de tapicería de auto" class="slide">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800&auto=format&fit=crop" alt="Auto limpio" class="slide">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-car service-icon"></i>
+                        <h3>Limpieza Automotriz</h3>
+                        <p>Lavado detallado de tapicería interna de vehículos. Elimina olores y manchas en tu auto.</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -94,30 +131,30 @@
     <!-- SECCIÓN POR QUÉ ELEGIRNOS -->
     <section id="porque-elegirnos" class="why-us">
         <div class="container">
-            <h2 class="section-title">¿Por qué elegir Maxi Limpieza?</h2>
+            <h2 class="section-title reveal">¿Por qué elegir Maxi Limpieza?</h2>
             <div class="features-grid">
-                <div class="feature-item">
+                <div class="feature-item reveal">
                     <i class="fas fa-check-circle"></i>
                     <div>
                         <h4>Servicio a Domicilio</h4>
                         <p>Nos desplazamos a cualquier barrio de Barranquilla y su área metropolitana.</p>
                     </div>
                 </div>
-                <div class="feature-item">
+                <div class="feature-item reveal">
                     <i class="fas fa-check-circle"></i>
                     <div>
                         <h4>Productos Certificados</h4>
                         <p>Usamos productos seguros para niños, mascotas y el medio ambiente.</p>
                     </div>
                 </div>
-                <div class="feature-item">
+                <div class="feature-item reveal">
                     <i class="fas fa-check-circle"></i>
                     <div>
                         <h4>Personal Calificado</h4>
                         <p>Nuestro equipo está entrenado para tratar todo tipo de telas y materiales.</p>
                     </div>
                 </div>
-                <div class="feature-item">
+                <div class="feature-item reveal">
                     <i class="fas fa-check-circle"></i>
                     <div>
                         <h4>Secado Rápido</h4>
@@ -131,10 +168,10 @@
     <!-- SECCIÓN DE CONTACTO / CTA -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2>¿Listo para renovar tus muebles?</h2>
-            <p>Agenda tu cita hoy mismo en Barranquilla y obtén un 10% de descuento en tu primer servicio.</p>
+            <h2 class="reveal">¿Listo para renovar tus muebles?</h2>
+            <p class="reveal">Agenda tu cita hoy mismo en Barranquilla y obtén un 10% de descuento en tu primer servicio.</p>
             
-            <div class="contact-info">
+            <div class="contact-info reveal">
                 <div class="info-item">
                     <i class="fas fa-phone-alt"></i>
                     <span>+57 323 472 9337</span>
@@ -149,7 +186,7 @@
                 </div>
             </div>
 
-            <a href="https://wa.me/573234729337?text=Hola,%20quiero%20información%20sobre%20el%20servicio%20de%20limpieza" class="btn btn-primary btn-large" target="_blank">
+            <a href="https://wa.me/573234729337?text=Hola,%20quiero%20información%20sobre%20el%20servicio%20de%20limpieza" class="btn btn-primary btn-large reveal" target="_blank">
                 <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
             </a>
         </div>
@@ -163,5 +200,12 @@
         </div>
     </footer>
 
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/573234729337?text=Hola%20Maxi%20Limpieza" class="whatsapp-float" target="_blank" id="whatsappBtn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPT JS -->
+    <script src="script.js"></script>
 </body>
 </html>
