@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Círculo de fondo blanco -->
+  <circle cx="50" cy="50" r="48" fill="#ffffff" />
+  
+  <!-- Borde con gradiente -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#e91e63"/>
+      <stop offset="100%" stop-color="#9c27b0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="none" stroke="url(#grad)" stroke-width="4" />
+  
+  <!-- Letra M grande (representa "Maxi") -->
+  <path d="M 20 65 L 20 35 L 35 55 L 50 35 L 50 65" 
+        fill="none" 
+        stroke="#4a3b32" 
+        stroke-width="8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  
+  <!-- Perezoso estilizado (cabeza y cuerpo) -->
+  <g transform="translate(55, 25) scale(0.7)">
+    <!-- Cuerpo -->
+    <path d="M 15 10 C 35 10 50 25 50 45 C 50 60 40 75 25 85 C 15 92 5 92 5 85 C 5 78 15 70 25 60 C 32 52 38 42 38 32 C 38 22 28 15 18 15 Z" 
+          fill="#4bc0e8" />
+    <!-- Cabeza -->
+    <circle cx="12" cy="28" r="12" fill="#4bc0e8" />
+    <!-- Ojo -->
+    <circle cx="15" cy="25" r="2.5" fill="#ffffff" />
+    <!-- Nariz -->
+    <circle cx="3" cy="28" r="2" fill="#ffffff" />
+    <!-- Brazo levantado -->
+    <path d="M 48 35 L 60 20 L 65 25 L 52 40 Z" fill="#4bc0e8" />
+  </g>
+</svg>
